@@ -6,6 +6,11 @@ import Layout from "../layouts/Layout.astro";
   <main>
     <h1>sf frens zines</h1>
     <p>
+      The theme for zine 5 is "shenanigan(s)". Send us your submissions using 
+      <a href="https://forms.gle/HcWhivR7HSzK69tH7">this form</a>! Submissions are open until May 24, 2026.
+    </p>
+    <br>
+    <p>
       zine, n. "a small-circulation self-published work of original or
       appropriated texts and images" — <a
         href="https://en.wikipedia.org/wiki/Zine">Wikipedia</a
@@ -41,6 +46,26 @@ import Layout from "../layouts/Layout.astro";
     </ul>
 
     <style>
+      h1 {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        -webkit-text-stroke: 0;
+        display: inline-block;
+        position: relative;
+        padding-bottom: 14px;
+      }
+
+      h1::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: -4px;
+        right: -4px;
+        height: 14px;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 300 14' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M 2,9 C 30,3 60,13 90,7 C 120,1 150,12 180,7 C 210,2 240,11 298,8' stroke='white' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+
       ul {
         list-style: lower-greek;
       }
