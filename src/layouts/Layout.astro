@@ -53,6 +53,27 @@ const { title } = Astro.props;
     font-size: xx-large;
   }
 
+  h1 {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      -webkit-text-stroke: 0;
+      text-align: center;
+      position: relative;
+      padding-bottom: 14px;
+    }
+  
+  /* squiggle underline */
+  #main-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -4px;
+    right: -4px;
+    height: 14px;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 300 14' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M 2,9 C 30,3 60,13 90,7 C 120,1 150,12 180,7 C 210,2 240,11 298,8' stroke='white' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
   body {
     background: linear-gradient(to bottom, #DE0051, #e8557f);
     min-height: 100vh;
